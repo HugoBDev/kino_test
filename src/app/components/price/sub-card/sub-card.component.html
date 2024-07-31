@@ -1,0 +1,24 @@
+<div id="sub-card-container">
+    @if(subDetails) { @for(subDetail of subDetails; track subDetail){
+    <div class="sub-card" >
+      <div>
+        <div>{{ subDetail.name }}</div>
+        <div class="formula">
+          <span>à partir de</span>
+          <div class="sub-price">
+            <div class="price">{{ subDetail.price }}€</div>
+            <div class="period">/{{ subDetail.period}}</div>
+          </div>
+        </div>
+        <div>Pour {{ subDetail.users }} utilisateur</div>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <div>Disponible avec l'option famille jusqu'à 5 utilisateurs </div>
+    
+        <button>Abonnez-vous</button>
+      </div>
+    </div>
+    
+    } }
+</div>
