@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+$main-color : #FFC947;
+
+
+
+@font-face {
+    font-family: 'primaryFont';
+    src:local('Sk-Modernist-Bold') url('/frontproject/fonts/Sk-Modernist-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'secondaryFont';
+    src: 
+    local('Sk-Modernist-Regular'), url('/frontproject/fonts/Sk-Modernist-Regular.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+

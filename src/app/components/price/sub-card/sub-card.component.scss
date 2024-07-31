@@ -1,31 +1,45 @@
-#sub-card-container{
+@import "../../../../styles.scss";
+
+#sub-card-container {
+  font-family: "Sk-Modernist-Regular.otf", sans-serif;
+  display: flex;
+  gap: 20px;
+  .sub-card {
     display: flex;
-    .sub-card{
-        display: flex;
-        flex-direction: column;
-        width: 394px;
-        height: 536px;
-        padding: 30px;
-        margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 394px;
+    height: 536px;
+    padding: 30px;
+    margin: 20px;
+  }
+  .formula {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-price {
+    display: flex;
+    align-items: end;
+    gap: 0.2rem;
+    .price {
+      font-weight: bold;
+      font-size: 2rem;
     }
-    .formula{
-        display: flex; 
-        flex-direction: column;
-    }
-    .sub-price{
-        display: flex;
-        align-items: end;
-        gap: 0.2rem;
-        .price{
-            font-weight: bold;
-            font-size: 2rem;
-        }
-    
-    }
-    .divider{
-        width: 90%;
-        height: 1px;
-        background-color: rgb(0, 0, 0);
-        opacity: 0.2;
-    }
+  }
+  .divider {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;
+  }
+  button {
+    text-wrap: nowrap;
+    font-family: "Sk-Modernist-Regular", sans-serif;
+    font-weight: 700;
+    padding: 15px 60px 15px 60px;
+    background-color: $main-color;
+    border: none;
+    border-radius: 10px;
+  }
 }
