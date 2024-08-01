@@ -131,28 +131,4 @@
   }
 }
 
-.sub-options-container{
-  background: $light-color;
-  display: flex;
-  width: 60%;
- .title{
-  font-weight: 900;
-  font-family: 'SK-Modernist-Bold', sans-serif;
-  font-size: 2rem;
- }
-  .sub-options{
-    display: flex;
-    align-items: center;
-    
-    gap: 1rem;
-    padding: 1rem;
-    justify-content: center;
-    p{
-      font-weight: bold;
-      color: $dark-color;
-      font-family: 'SK-Modernist-Regular', sans-serif;
 
-    }
-    
-  }
-}
