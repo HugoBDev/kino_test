@@ -1,7 +1,9 @@
 $main-color : #FFC947;
 
 
-
+body{
+    background: #F4F7F9;
+}
 @font-face {
     font-family: 'primaryFont';
     src:local('Sk-Modernist-Bold') url('/frontproject/fonts/Sk-Modernist-Bold.otf') format('opentype');
