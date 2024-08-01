@@ -1,3 +1,24 @@
-<div>
-    <app-sub-card></app-sub-card>
+<div id="welcome-page">
+  <app-nav-bar></app-nav-bar>
+  <div id="welcome">
+    <div class="text-side">
+      <div class="title">
+        <h1>Nos offres et nos tarifs</h1>
+      </div>
+      <div class="description">
+        <p>
+          L'abonnement ipsum dolor, vous permet de consectetur adipisicing elit. Temporibus vero nihil porro, quo suscipit mollitia ipsam ipsum architecto sit qui dignissimos nisi.
+        </p>
+      </div>
+      <div class="redirect" (click)="scrollToBottom()">
+        <p>How it works ?</p>
+      </div>
+    </div>
+    <img
+      src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/image1.png
+        "
+      alt="images with some parcours and icons "
+    />
+  </div>
 </div>
+<app-sub-card id="sub-card"></app-sub-card>

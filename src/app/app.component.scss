@@ -1,0 +1,24 @@
+@import "../styles.scss";
+
+#welcome-page{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background: $dark-color;
+    // gap: 5rem;
+}
+
+#welcome{
+    font-family: 'Sk-Modernist-Regular', sans-serif;
+    color: $light-color;
+    display: flex;
+    padding: 5rem;
+    gap: 4.5rem;
+    .title{
+        font-size: 3.5rem ;
+    }
+    .description{
+        font-size: 2rem;
+        color: $primary-text-color;
+    }
+}

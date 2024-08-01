@@ -1,0 +1,39 @@
+@import "../../../styles.scss";
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-family: 'SK-Modernist-Regular', sans-serif;
+  .left-side {
+    display: flex;
+    gap: 5rem;
+  }
+  .search-zone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    .search-input {
+      background: $dark-color;
+      border: none;
+      &::placeholder {
+        color: $light-color;
+      }
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  gap: 1.5rem;
+  color: $primary-text-color;
+  cursor: pointer;
+  div {
+    padding: 0.5rem;
+    &:hover {
+      border-bottom: 1px solid $main-color;
+      color: $light-color;
+    }
+  }
+}
