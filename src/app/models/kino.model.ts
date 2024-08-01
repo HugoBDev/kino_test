@@ -6,10 +6,7 @@ export interface SubDetail {
   price: number;
   period: number 
   users: number;
+  best_value : boolean
 }
 
-export enum Period {
-  MONTH ='MOIS',
-  YEAR = 'AN',
-  LIFETIME = 'A VIE'
-}
+

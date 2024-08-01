@@ -1,64 +1,116 @@
 @import "../../../../styles.scss";
 
 #sub-card-container {
-  font-family: "Sk-Modernist-Regular.otf", sans-serif;
+  font-family: "Sk-Modernist-Regular", sans-serif;
   display: flex;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
   .sub-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 394px;
-    height: 536px;
+    border-radius: 5px;
     padding: 30px;
     margin: 20px;
     gap: 2rem;
-    box-shadow: 0px 40px 20px -19px #CCE2FF5C;
-    background: hotpink;
+    box-shadow: 0px 40px 20px -19px #cce2ff5c;
+    color: $primary-text-color;
+    background: $light-color;
+  }
+}
 
-    .pricing{
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    .formula-name{
-      font-family: 'SK-Modernist-Bold', sans-serif;
-      font-weight: 700;
-      font-size: 36px;
-    }
-  }
-  .formula {
-    display: flex;
-    flex-direction: column;
-    color: red;
-  }
-  .sub-price {
-    display: flex;
-    align-items: end;
-    gap: 0.2rem;
-    .price {
-      font-weight: bold;
-      font-size: 2rem;
-    }
-  }
-  .divider {
-    width: 90%;
-    height: 1px;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.2;
-  }
-  .options{
-    display: flex;
-    gap: 1rem;
-  }
-  button {
-    text-wrap: nowrap;
-    font-family: "Sk-Modernist-Regular", sans-serif;
+.top-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 4rem;
+  span {
     font-weight: 700;
-    padding: 15px 60px 15px 60px;
+    color: $secondary-text-color;
+  }
+}
+
+.formula-name {
+  font-family: "SK-Modernist-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: $secondary-text-color;
+  padding:0 3rem 3rem 0 ;
+}
+.formula {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  span {
+    font-weight: 100;
+    color: $primary-text-color;
+  }
+}
+.sub-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+  .price {
+    font-weight: bold;
+    font-size: 3rem;
+    color: $secondary-color;
+    font-family: 'SK-Modernist-Regular', sans-serif;
+  }
+}
+.divider {
+  width: 90%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.308);
+  opacity: 0.2;
+}
+.bottom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+.options {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  span {
+    font-weight: 700;
+    color: $secondary-text-color;
+  }
+}
+
+.sub-card-best-value {
+  @extend .sub-card;
+  position: relative;
+  border: 4px solid $main-color;
+  overflow: hidden;
+  .price {
+    color: $main-color !important;
+  }
+}
+
+.banner {
+  top: -4px;
+  right: -4px;
+  // background-color: $main-color;
+  width: 120px;
+
+  &::before {
+    content: "BEST VALUES";
+    position: absolute;
+    top: 30px;
+    right: -40px;
     background-color: $main-color;
-    border: none;
-    border-radius: 10px;
+    color: $secondary-text-color;
+    padding: 10px 50px;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 }

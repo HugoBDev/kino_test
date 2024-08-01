@@ -1,7 +1,10 @@
 <div id="sub-card-container">
     @if(subDetails) { @for(subDetail of subDetails; track subDetail){
-    <div class="sub-card" >
-      <div class="pricing">
+    <div [ngClass]="(subDetail.best_value) ? 'sub-card-best-value' : 'sub-card'" >
+      @if(subDetail.best_value) {
+        <div class="banner"></div>
+      }
+      <div class="top-card">
         <div class="formula-name">{{ subDetail.name }}</div>
         <div class="formula">
           <span>à partir de</span>
@@ -10,10 +13,10 @@
             <div class="period">/{{ subDetail.period}}</div>
           </div>
         </div>
-        <div>Pour {{ subDetail.users }} utilisateur</div>
+        <div>pour <span>{{ subDetail.users }} utilisateur</span></div>
       </div>
       <div class="divider"></div>
-      <div>
+      <div class="bottom-card">
         <div class="options">
           <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_4_336)">
@@ -26,9 +29,11 @@
             </clipPath>
             </defs>
             </svg>
-          <div>Disponible avec l'option famille jusqu'à 5 utilisateurs </div>
+          <div>Disponible avec l'option famille 
+            <span> jusqu'à 5 utilisateurs</span>
+          </div>
         </div>
-        <button>Abonnez-vous</button>
+        <button [ngClass]="(subDetail.best_value) ? 'button-classic' : 'button-empty'">Abonnez-vous</button>
       </div>
     </div>
     
