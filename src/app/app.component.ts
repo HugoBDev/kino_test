@@ -4,11 +4,14 @@ import { KinoApiService } from './services/kino-api.service';
 import { SubCardComponent } from './components/sub-card/sub-card.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ViewportScroller } from '@angular/common';
+import { RatingImgComponent } from './components/rating-img/rating-img.component';
+import { RondIconComponent } from './components/rond-component/rond-icon.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SubCardComponent, NavBarComponent],
+  imports: [SubCardComponent, NavBarComponent, RatingImgComponent, RondIconComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
