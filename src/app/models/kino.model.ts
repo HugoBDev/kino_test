@@ -8,5 +8,9 @@ export interface SubDetail {
   users: number;
   best_value : boolean
 }
+export interface Faq {
+  details : string, 
+  title : string
+}
 
 
