@@ -1,0 +1,60 @@
+@import '../../../styles.scss';
+
+
+#formula-options-container {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'SK-Modernist-Regular', sans-serif;
+    color: $dark-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 90vw;
+
+    
+}
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 50%;
+
+    
+}
+.formula-options {
+   display: flex;
+   flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.option {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 20px;  
+    width: 100%
+}
+.option-row{
+    display: flex;
+}
+.option:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.option svg {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.option p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $primary-text-color;
+}
+.option span {
+    font-weight: 700;
+    color: $dark-color;
+}

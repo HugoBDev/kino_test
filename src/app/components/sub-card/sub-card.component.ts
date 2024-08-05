@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { SubDetail } from '../../models/kino.model';
 import { KinoApiService } from '../../services/kino-api.service';
+import { FormulaOptionsComponent } from '../formula-options/formula-options.component';
 
 @Component({
   selector: 'app-sub-card',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, FormulaOptionsComponent],
   templateUrl: './sub-card.component.html',
   styleUrl: './sub-card.component.scss',
 })
