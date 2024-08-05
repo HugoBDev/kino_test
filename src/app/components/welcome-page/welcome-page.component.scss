@@ -1,0 +1,92 @@
+@import "../../../styles.scss";
+
+#welcome-page {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  background: $dark-color;
+  // gap: 5rem;
+}
+
+#welcome {
+  font-family: "Sk-Modernist-Regular", sans-serif;
+  color: $light-color;
+  display: flex;
+  padding: 4rem;
+  gap: 4.5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    font-size: 78px;
+    line-height: 150px;
+  }
+  .description {
+    font-size: 34px;
+    color: $primary-text-color;
+  }
+  .text-side {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem   ;
+    width: 50%;
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1980px) {
+    .text-side{
+      gap: 2rem;
+    }
+  .title {
+    h1 {
+        line-height: normal;
+      font-size: 68px;
+    }
+    
+  }
+  .description{
+    font-size: 24;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .title {
+    h1 {
+      font-size: 42px;
+    }}
+      .description {
+        p {
+          font-size: 12px !important;
+        }
+      }
+    
+    .welcome {
+      .img-container{
+        width: 30%;
+      }
+    }
+  }
+@media screen and (max-width: 500px) {
+    #welcome {
+        flex-direction: column;
+        padding: 0;
+        .text-side{
+            gap: 0.5rem;
+        }
+    }
+  .title {
+    h1 {
+      font-size: 42px;
+    }}
+      .description {
+        p {
+          font-size: 12px !important;
+        }
+      }
+    
+   
+  }
+

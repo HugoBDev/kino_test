@@ -2,18 +2,17 @@ import { Component } from '@angular/core';
 
 import { KinoApiService } from './services/kino-api.service';
 import { SubCardComponent } from './components/sub-card/sub-card.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ViewportScroller } from '@angular/common';
 import { RatingImgComponent } from './components/rating-img/rating-img.component';
-import { RondIconComponent } from './components/rond-component/rond-icon.component';
 import { FaqItemComponent } from './components/faq-item/faq-item.component';
 import { GiftCardComponent } from './components/gift-card/gift-card.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SubCardComponent, NavBarComponent, RatingImgComponent, RondIconComponent, FaqItemComponent, GiftCardComponent],
+  imports: [SubCardComponent, RatingImgComponent, FaqItemComponent, GiftCardComponent, WelcomePageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -25,7 +24,5 @@ export class AppComponent {
     });
   }
 
-  scrollToBottom() { 
-    this.scroller.scrollToAnchor('sub-card')
-  }
+ 
 }

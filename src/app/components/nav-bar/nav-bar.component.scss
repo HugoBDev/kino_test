@@ -6,6 +6,10 @@
   justify-content: space-between;
   padding: 1rem;
   font-family: 'SK-Modernist-Regular', sans-serif;
+  height: 1.5rem;
+  button{
+    padding: 10px 50px 10px 50px;
+  }
   .left-side {
     display: flex;
     gap: 5rem;
@@ -36,4 +40,25 @@
       color: $light-color;
     }
   }
+}
+.burger-menu{
+  display: block;
+  position: absolute;
+  right: 10px;
+  display: none;
+  img{
+    width: 30px;
+
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .navigation, .left-side, button{
+   display: none;
+ }
+
+.burger-menu{
+  display: block;
+}
+  
 }
