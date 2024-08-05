@@ -145,3 +145,13 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 }
+@media screen and (max-width: 1300px) {
+  #prices-container {
+    background: $light-color-100;
+  }
+  #sub-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}

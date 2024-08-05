@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { SubCardComponent } from '../sub-card/sub-card.component';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-nav-bar',
