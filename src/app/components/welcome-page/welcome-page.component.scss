@@ -28,27 +28,26 @@
   .text-side {
     display: flex;
     flex-direction: column;
-    gap: 4rem   ;
+    gap: 4rem;
     width: 50%;
   }
-  img{
+  img {
     width: 100%;
     object-fit: cover;
   }
 }
 
 @media screen and (max-width: 1980px) {
-    .text-side{
-      gap: 2rem;
-    }
+  .text-side {
+    gap: 2rem;
+  }
   .title {
     h1 {
-        line-height: normal;
+      line-height: normal;
       font-size: 68px;
     }
-    
   }
-  .description{
+  .description {
     font-size: 24;
   }
 }
@@ -56,39 +55,45 @@
   .title {
     h1 {
       font-size: 42px;
-    }}
-      .description {
-        p {
-          font-size: 12px !important;
-        }
-      }
-    
-    .welcome {
-      .img-container{
-        width: 30%;
-      }
     }
   }
-@media screen and (max-width: 500px) {
-    #welcome {
-        flex-direction: column;
-        padding: 2rem 0 0 0 ;
-        gap: 2rem;
-        .text-side{
-          width: 90%;
-            gap: 0.5rem;
-        }
+  .description {
+    p {
+      font-size: 12px !important;
     }
+  }
+
+  .welcome {
+    .img-container {
+      width: 30%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  #welcome {
+    flex-direction: column;
+    padding: 2rem 0 0 0;
+    gap: 2rem;
+    .text-side {
+      width: 90%;
+      gap: 0.5rem;
+    }
+  }
   .title {
     h1 {
       font-size: 42px;
-    }}
-      .description {
-        p {
-          font-size: 12px !important;
-        }
-      }
-    
-   
+    }
   }
-
+  .description {
+    p {
+      font-size: 12px !important;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  #welcome {
+    .text-side{
+       gap: 1rem !important;
+     }
+  }
+}
