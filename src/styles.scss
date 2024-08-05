@@ -13,13 +13,13 @@ $light-color-100: #f4f7f9;
 }
 @font-face {
   font-family: "Sk-Modernist-Bold";
-  src: url("../frontproject/fonts/Sk-Modernist-Bold.otf");
+  src: url("../src/app/assets/Sk-Modernist-Bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Sk-Modernist-Regular";
-  src: url("../frontproject/fonts/Sk-Modernist-Regular.otf") format("opentype");
+  src: url("./app/assets/Sk-Modernist-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
