@@ -53,8 +53,16 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .navigation, .left-side, button{
+  #nav-bar{
+    .left-side{
+      gap: 8rem;
+    }
+  }
+  .navigation, button{
    display: none;
+ }
+ .search-input{
+  display: none;
  }
 
 .burger-menu{
