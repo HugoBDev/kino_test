@@ -7,12 +7,13 @@ import { ViewportScroller } from '@angular/common';
 import { RatingImgComponent } from './components/rating-img/rating-img.component';
 import { RondIconComponent } from './components/rond-component/rond-icon.component';
 import { FaqItemComponent } from './components/faq-item/faq-item.component';
+import { GiftCardComponent } from './components/gift-card/gift-card.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SubCardComponent, NavBarComponent, RatingImgComponent, RondIconComponent, FaqItemComponent],
+  imports: [SubCardComponent, NavBarComponent, RatingImgComponent, RondIconComponent, FaqItemComponent, GiftCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

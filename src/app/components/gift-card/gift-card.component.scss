@@ -1,0 +1,48 @@
+@import '../../../styles.scss';
+.gift-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+#gift-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+    background: $dark-color;
+    color: $light-color;
+    font-family: 'SK-Modernist-Bold', sans-serif;
+    
+    width: 90%;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 4rem 0 4rem 20rem ;
+        width: 35%;
+        h2{
+            margin: 0;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 24px;
+            color: $primary-text-color;
+        }
+        button{
+            width: fit-content;
+        }
+        a{
+            text-decoration: none;
+            color: $light-color;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            
+        }
+    }
+}

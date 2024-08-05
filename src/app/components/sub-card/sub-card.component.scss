@@ -3,24 +3,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  background : linear-gradient(to bottom, 
-  $light-color-100 0%, 
-  $light-color-100 50%, 
-  $light-color 50%, 
-  $light-color 100%);
-width: 100vw;
+  background: linear-gradient(
+    to top,
+    $light-color 0%,
+    $light-color 63%,
+    $light-color-100 50%,
+    $light-color-100 100%
+  );
+  padding: 5rem 0 5rem 0;
+  width: 100vw;
   .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding: 2rem 0 2rem 0;
     h2 {
       font-family: "Sk-Modernist-Bold", sans-serif;
       font-weight: 700;
       font-size: 36px;
-      color: $light-color;
-}}}
+      color: $dark-color;
+    }
+    p {
+      color: $primary-text-color;
+      font-size: 24px;
+    }
+  }
+  
+}
 #sub-card-container {
   font-family: "Sk-Modernist-Regular", sans-serif;
   display: flex;
@@ -61,7 +71,7 @@ width: 100vw;
   font-weight: 700;
   font-size: 36px;
   color: $dark-color;
-  padding:0 3rem 3rem 0 ;
+  padding: 0 3rem 3rem 0;
 }
 .formula {
   display: flex;
@@ -80,7 +90,7 @@ width: 100vw;
     font-weight: bold;
     font-size: 3rem;
     color: $secondary-color;
-    font-family: 'SK-Modernist-Regular', sans-serif;
+    font-family: "SK-Modernist-Regular", sans-serif;
   }
 }
 .divider {
@@ -135,5 +145,3 @@ width: 100vw;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 }
-
-
