@@ -1,27 +1,48 @@
-# KinoTest
+<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
+# Bienvenue sur le projet Angular !
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+Ce projet est une page web statique développée en utilisant Angular, HTML, CSS et TypeScript. Il démontre une mise en œuvre professionnelle des technologies web modernes pour créer une interface utilisateur responsive et attrayante.
 
-## Development server
+## Technologies utilisées
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Le projet s'appuie sur les technologies suivantes :
 
-## Code scaffolding
+- Angular : framework pour la structure globale de l'application.
+- TypeScript : implémentation de la logique côté client avec un typage fort pour une meilleure maintenabilité.
+- HTML5 : structure sémantique pour un contenu bien organisé et accessible.
+- CSS3 : stylisation avancée pour une présentation visuelle attrayante et cohérente.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Fonctionnalités
 
-## Build
+La page web propose une expérience utilisateur agréable grâce à :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Une interface utilisateur intuitive et moderne** : le design est minimaliste et élégant, avec des couleurs chaleureuses pour renforcer l'expérience utilisateur.
+- **Un design responsive** : la page se redimensionne automatiquement pour offrir une expérience optimale sur tous les appareils, du smartphone au PC.
+- **Des performances rapides** : le site charge rapidement, assurant une expérience utilisateur fluide.
+- **Un code propre et bien documenté** : le code est facilement compréhensible, ce qui facilite sa maintenance.
 
-## Running unit tests
+## Conformité à la maquette
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Le projet a été développé en suivant scrupuleusement la maquette fournie. Les détails comme la disposition des éléments, les choix de couleurs et la typographie ont été respectés. Les espaces et les marges ont été soigneusement ajustés pour offrir une expérience utilisateur cohérente. Les interactions et animations ont également été implémentées pour donner une sensation de fluidité.
 
-## Running end-to-end tests
+## Installation et exécution
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Pour exécuter ce projet en local, voici les étapes à suivre :
 
-## Further help
+1. Clonez le repository.
+2. Installez les dépendances : `npm install`.
+3. Lancez le serveur de développement : `ng serve`.
+4. Ouvrez votre navigateur à l'adresse : `http://localhost:4200`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Remerciements
+(https://www.kinomap.com/v2/assets/images/logo/kinomap_primary_white.png)
+
+Un grand merci à l'équipe de Kinomap pour cette opportunité de démontrer mes compétences en développement web. Votre soutien et vos défis ont été essentiels pour cette réalisation.
+
+## Contact
+
+Pour toute question ou commentaire concernant ce projet, n'hésitez pas à me contacter.
+
+
+
+
