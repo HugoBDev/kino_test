@@ -1,4 +1,4 @@
-
+<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
 # Bienvenue sur le projet Angular !
 
 Ce projet est une page web statique développée en utilisant Angular, HTML, CSS et TypeScript. Il démontre une mise en œuvre professionnelle des technologies web modernes pour créer une interface utilisateur responsive et attrayante.
@@ -35,8 +35,8 @@ Pour exécuter ce projet en local, voici les étapes à suivre :
 4. Ouvrez votre navigateur à l'adresse : `http://localhost:4200`.
 
 ## Remerciements
-(https://www.kinomap.com/v2/assets/images/logo/kinomap_primary_white.png)
 
+![Kinomap](https://www.kinomap.com/v2/assets/images/logo/kinomap_primary_white.png)
 Un grand merci à l'équipe de Kinomap pour cette opportunité de démontrer mes compétences en développement web. Votre soutien et vos défis ont été essentiels pour cette réalisation.
 
 ## Contact
