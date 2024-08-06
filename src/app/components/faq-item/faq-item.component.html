@@ -1,25 +1,27 @@
 <div id="faq">
-    <div class="faq-header">
-        <h2>Vos questions les plus fréquentes</h2>
-        <p>Get ready, start your indoor training and explore the world from home on Kinomap!
-        </p>
-    </div>
-    <div id="faq-item-container">
-        @for(faqItem of faqItems ; track faqItem){
-        <div class="faq-item" >
-          <p>{{ faqItem.title }}</p>
-          <div class="plus-button" (click)="faqItem.isOpen = !faqItem.isOpen">
-            <img
-              [src]="
-                'https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/plus.svg?ref_type=heads'
-              "
-            />
-        </div>
+  <div class="faq-header">
+    <h2>Vos questions les plus fréquentes</h2>
+    <p>
+      Get ready, start your indoor training and explore the world from home on
+      Kinomap!
+    </p>
+  </div>
+  <div id="faq-item-container">
+    @for(faqItem of faqItems ; track faqItem){
+    <div class="faq-item">
+      <p>{{ faqItem.title }}</p>
+      <div class="plus-button" (click)="faqItem.isOpen = !faqItem.isOpen">
+        <img
+          [src]="
+            'https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/plus.svg?ref_type=heads'
+          "
+        />
+      </div>
     </div>
     @if(faqItem.isOpen){
     <div class="faq-details">
       <p>{{ faqItem.details }}</p>
     </div>
     } }
-    </div>
+  </div>
 </div>

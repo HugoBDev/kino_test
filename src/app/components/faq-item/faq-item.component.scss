@@ -68,6 +68,27 @@
    border: none;
 }
 
+//! 🖼️------RESPONSIVE-------- 🖼️
+
+
+@media screen and (max-width: 768px) {
+    #faq{
+        padding: 20rem 0 5rem 0 !important;
+    }
+        .faq-item{
+            width: 80% !important;
+            padding: 0.5rem !important;
+            p{
+                width: inherit;
+                font-size: 16px !important;
+            }
+            .plus-button{
+               width: 30px !important;
+               height: 30px !important;
+            }
+        }
+    }
+
 @media screen and (max-width: 430px) {
     #faq{
         padding: 15rem 0 5rem 0 !important;
@@ -79,33 +100,18 @@
                 font-size: 16px !important;
             }
         }
+        .faq-item{
+            width: 80% !important;
+            padding: 0.5rem !important;
+            p{
+                width: inherit;
+                font-size: 12px !important;
+            }
+            .plus-button{
+               width: 20px !important;
+               height: 20px !important;
+            }
+        }
     }
 }
 
-#faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    font-family: 'Sk-Modernist-Bold', sans-serif;
-    padding: 10rem 0 10rem 0;
-    .faq-header{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        width: 60%;
-        padding: 1rem;
-        h2{
-            
-            color: $dark-color;
-            font-size: 48px;
-            font-weight: 700;
-        }
-        p{
-            font-size: 24px ;
-            color: $primary-text-color;
-        }
-    }
-}

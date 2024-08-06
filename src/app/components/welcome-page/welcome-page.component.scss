@@ -37,6 +37,9 @@
   }
 }
 
+//! 🖼️------RESPONSIVE-------- 🖼️
+
+
 @media screen and (max-width: 1980px) {
   .text-side {
     gap: 2rem;
@@ -51,7 +54,12 @@
     font-size: 24;
   }
 }
+
+
 @media screen and (max-width: 1440px) {
+  #welcome-page {
+    height: 50vh;
+  }
   .title {
     h1 {
       font-size: 42px;
@@ -69,6 +77,8 @@
     }
   }
 }
+
+
 @media screen and (max-width: 500px) {
   #welcome {
     flex-direction: column;
@@ -76,7 +86,13 @@
     gap: 2rem;
     .text-side {
       width: 90%;
-      gap: 0.5rem;
+      gap: 1rem;
+    }
+    .img-container{
+      width: 50%
+    }
+    img{
+      width: 100%
     }
   }
   .title {
@@ -90,10 +106,12 @@
     }
   }
 }
-@media screen and (max-width: 500px) {
+
+
+@media screen and (max-width: 360px) {
   #welcome {
-    .text-side{
-       gap: 1rem !important;
-     }
+    .text-side {
+      gap: 0.5rem;
+    }
   }
 }

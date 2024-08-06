@@ -47,13 +47,27 @@
     }
 }
 
+//! 🖼️------RESPONSIVE-------- 🖼️
+
+
 @media screen and (max-width: 770px) {
     .content{
         padding: 4rem 0 4rem 5rem !important; ;
     }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 430px) {
     .content{
-        padding: 4rem 0 4rem 1rem !important; ;
+        padding: 4rem 0 4rem 1rem !important; 
+        width: 80% !important;
+
+        h2{
+            font-size: 24px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+        button{
+            padding: 0.5rem 1rem !important;
+        }
     }
 }

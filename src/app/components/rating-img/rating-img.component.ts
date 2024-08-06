@@ -10,11 +10,15 @@ import { RondIconComponent } from '../rond-component/rond-icon.component';
 })
 export class RatingImgComponent {
   ratingScore : number = 0
+  freePeriod : number = 0
   constructor(private KinoApiService: KinoApiService) {}
 
   ngOnInit(): void {
     this.KinoApiService.getScore().then((data) => {
       this.ratingScore = data;
     });
+    this.KinoApiService.getFreePeriod().then((data) => {
+      this.freePeriod = data;
+    })
   }
 }

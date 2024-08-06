@@ -60,8 +60,28 @@
     color: $dark-color;
 }
 
+//! 🖼️------RESPONSIVE-------- 🖼️
+
+
 @media screen and (max-width: 768px) {
     #formula-options-container{
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 430px) {
+    #formula-options-container{
+        flex-direction: column;
+        .title{
+            width: 100%;
+            font-size: 24px;
+        }
+        .option{
+            display: flex;
+            align-items: center ;
+            padding: 5px ;
+            p{
+                font-size: 14px !important;
+            }
+        }
     }
 }
