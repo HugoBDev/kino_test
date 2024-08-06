@@ -1,4 +1,3 @@
-<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
 # Bienvenue sur le projet Angular !
 
 Ce projet est une page web statique développée en utilisant Angular, HTML, CSS et TypeScript. Il démontre une mise en œuvre professionnelle des technologies web modernes pour créer une interface utilisateur responsive et attrayante.
