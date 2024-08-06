@@ -9,7 +9,7 @@ Le projet s'appuie sur les technologies suivantes :
 - Angular : framework pour la structure globale de l'application.
 - TypeScript : implémentation de la logique côté client avec un typage fort pour une meilleure maintenabilité.
 - HTML5 : structure sémantique pour un contenu bien organisé et accessible.
-- CSS3 : stylisation avancée pour une présentation visuelle attrayante et cohérente.
+- SCSS : stylisation avancée pour une présentation visuelle attrayante et cohérente.
 
 ## Fonctionnalités
 
