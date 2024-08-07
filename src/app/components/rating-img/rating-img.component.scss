@@ -6,9 +6,15 @@
   display: flex;
   justify-content: center;
   // height: 100%;
-  .runner-img {
+  .content{
     width: 100%;
-    object-fit: cover;
+  }
+  .img-container{
+    width: 100%;
+    .runner-img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }
 
