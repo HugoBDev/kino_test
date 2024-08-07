@@ -16,12 +16,13 @@
           <span>sit amet</span>
         </h2>
         <p>
-          Get ready, start your indoor training and explore the world from home on
-          Kinomap!
+          Get ready, start your indoor training and explore the world from home
+          on Kinomap!
         </p>
       </div>
       <div class="rating">
         <img
+          class="prefered-app-img"
           src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/preferedApp.png?ref_type=heads"
           alt=""
         />
@@ -55,31 +56,36 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="banner">
-    <div class="title">Profitez de {{freePeriod }} jours gratuit</div>
-    <div class="steps">
-      <div class="step-container">
-        <app-rond-component
-          [half]="true"
-          [step]="1"
-          [imgSrc]="
-            'https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/lock.svg?ref_type=heads'
-          "
-        ></app-rond-component>
-        <p>
-          <span>Aujourd'hui</span> démarrez votre 1er entraînement gratuitement
-        </p>
-      </div>
-      <div class="step-container">
-        <app-rond-component
-          [half]="false"
-          [step]="2"
-          [imgSrc]="
-            'https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/calendar.svg?ref_type=heads'
-          "
-        ></app-rond-component>
-        <p><span>Jour 14</span>abonnez-vous avec la formule de votre choix</p>
+    <div class="banner">
+      <div class="banner-content">
+        <div class="title">Profitez de {{ freePeriod }} jours gratuit</div>
+        <div class="steps">
+          <div class="step-container">
+            <app-rond-component
+              [half]="true"
+              [step]="1"
+              [imgSrc]="
+                'https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/lock.svg?ref_type=heads'
+              "
+            ></app-rond-component>
+            <p>
+              <span>Aujourd'hui</span> démarrez votre 1er entraînement
+              gratuitement
+            </p>
+          </div>
+          <div class="step-container">
+            <app-rond-component
+              [half]="false"
+              [step]="2"
+              [imgSrc]="
+                'https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/calendar.svg?ref_type=heads'
+              "
+            ></app-rond-component>
+            <p>
+              <span>Jour 14</span>abonnez-vous avec la formule de votre choix
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -7,11 +7,11 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
   standalone: true,
   imports: [NavBarComponent],
   templateUrl: './welcome-page.component.html',
-  styleUrl: './welcome-page.component.scss'
+  styleUrl: './welcome-page.component.scss',
 })
 export class WelcomePageComponent {
-  constructor( private scroller: ViewportScroller) {}
-  scrollToBottom() { 
-    this.scroller.scrollToAnchor('sub-card')
+  constructor(private scroller: ViewportScroller) {}
+  scrollToBottom() {
+    this.scroller.scrollToAnchor('sub-card');
   }
 }

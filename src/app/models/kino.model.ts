@@ -1,16 +1,11 @@
-
-
-
 export interface SubDetail {
   name: string;
   price: number;
-  period: number 
+  period: number;
   users: number;
-  best_value : boolean
+  best_value: boolean;
 }
 export interface Faq {
-  details : string, 
-  title : string
+  details: string;
+  title: string;
 }
-
-

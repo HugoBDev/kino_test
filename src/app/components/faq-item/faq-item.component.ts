@@ -16,11 +16,8 @@ export class FaqItemComponent {
 
   ngOnInit(): void {
     this.kinoApiService.getFAQ().then((data: Faq[]) => {
-      this.faqItems = data.map((faq : Faq) => ({ ...faq, isOpen: false }));
+      this.faqItems = data.map((faq: Faq) => ({ ...faq, isOpen: false }));
       console.log(this.faqItems);
-      
     });
-    
-    
   }
 }

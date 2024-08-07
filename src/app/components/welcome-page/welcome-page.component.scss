@@ -3,7 +3,7 @@
 #welcome-page {
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  // height: 60vh;
   background: $dark-color;
   // gap: 5rem;
 }
@@ -12,11 +12,8 @@
   font-family: "Sk-Modernist-Regular", sans-serif;
   color: $light-color;
   display: flex;
-  padding: 2rem 0 0 4rem;
+  padding: 5rem 5rem 2rem 10rem;
   gap: 4.5rem;
-  justify-content: space-between;
-  align-items: center;
-
   .title {
     font-size: 78px;
     line-height: 150px;
@@ -28,21 +25,22 @@
   .text-side {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 1rem;
     width: 50%;
   }
   img {
     width: 100%;
     object-fit: cover;
+    display: flex;
+    align-items: center;
   }
 }
 
 //! 🖼️------RESPONSIVE-------- 🖼️
 
-
 @media screen and (max-width: 1980px) {
   .text-side {
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .title {
     h1 {
@@ -55,29 +53,81 @@
   }
 }
 
-
 @media screen and (max-width: 1440px) {
   #welcome-page {
-    height: 50vh;
-  }
-  .title {
-    h1 {
-      font-size: 42px;
+    #welcome {
+      padding: 2rem 3rem 0 2rem;
+      .img-container {
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+      }
+      .text-side {
+        padding: 1rem;
+      }
     }
-  }
-  .description {
-    p {
-      font-size: 12px !important;
+    .title {
+      h1 {
+        font-size: 52px;
+      }
     }
-  }
-
-  .welcome {
-    .img-container {
-      width: 30%;
+    .description {
+      p {
+        font-size: 22px;
+      }
     }
   }
 }
-
+@media screen and (max-width: 860px) {
+  #welcome-page {
+    #welcome {
+      .img-container {
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+      }
+    }
+    .text-side {
+      gap: 0.5rem;
+    }
+    .title {
+      h1 {
+        font-size: 46px;
+      }
+    }
+    .description {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 670px) {
+  #welcome-page {
+    #welcome {
+      gap: 1rem;
+      .img-container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+    }
+    .text-side {
+      width: 90%;
+      gap: 0.5rem;
+    }
+    .title {
+      h1 {
+        font-size: 38px;
+      }
+    }
+    .description {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 500px) {
   #welcome {
@@ -88,11 +138,11 @@
       width: 90%;
       gap: 1rem;
     }
-    .img-container{
-      width: 50%
+    .img-container {
+      width: 50%;
     }
-    img{
-      width: 100%
+    img {
+      width: 100%;
     }
   }
   .title {
@@ -102,16 +152,18 @@
   }
   .description {
     p {
-      font-size: 12px !important;
+      font-size: 12px;
     }
   }
 }
-
 
 @media screen and (max-width: 360px) {
   #welcome {
     .text-side {
       gap: 0.5rem;
+    }
+    .img-container {
+      width: 80%;
     }
   }
 }

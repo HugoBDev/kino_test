@@ -5,9 +5,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  font-family: 'SK-Modernist-Regular', sans-serif;
+  font-family: "SK-Modernist-Regular", sans-serif;
   height: 1.5rem;
-  button{
+  background: $dark-color;
+  button {
     padding: 10px 50px 10px 50px;
   }
   .left-side {
@@ -41,45 +42,43 @@
     }
   }
 }
-.burger-menu{
+.burger-menu {
   display: block;
   position: absolute;
   right: 10px;
   display: none;
-  img{
+  img {
     width: 30px;
-
   }
 }
 
 //! 🖼️------RESPONSIVE-------- 🖼️
 
-
 @media screen and (max-width: 1300px) {
-  #nav-bar{
-    .left-side{
+  #nav-bar {
+    .left-side {
       gap: 8rem;
     }
   }
-  .navigation, button{
-   display: none;
- }
- .search-input{
-  display: none;
- }
+  .navigation,
+  button {
+    display: none;
+  }
+  .search-input {
+    display: none;
+  }
 
-.burger-menu{
-  display: block;
-}
-  
+  .burger-menu {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 360px) {
-  .left-side{
+  .left-side {
     gap: 1.5rem !important;
-    .img-container{
+    .img-container {
       width: 20px !important;
-      svg{
+      svg {
         width: 20px !important;
       }
     }

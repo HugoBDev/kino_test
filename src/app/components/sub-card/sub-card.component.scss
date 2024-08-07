@@ -6,24 +6,22 @@
   background: linear-gradient(
     to top,
     $light-color 0%,
-    $light-color 63%,
+    $light-color 56%,
     $light-color-100 50%,
     $light-color-100 100%
   );
-  padding: 5rem 0 5rem 0;
-  width: 100vw;
-  font-family: 'SK-Modernist-Regular', sans-serif;
+  padding: 5rem 0 3rem 0;
+  width: 100%;
+  font-family: "SK-Modernist-Regular", sans-serif;
   .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 2rem 0 2rem 0;
-    width: 100%;
+    padding: 2rem;
     h2 {
       font-family: "Sk-Modernist-Bold", sans-serif;
-      font-weight: 700;
-      font-size: 36px;
+      font-size: 48px;
       color: $dark-color;
     }
     p {
@@ -31,7 +29,6 @@
       font-size: 24px;
     }
   }
-  
 }
 #sub-card-container {
   font-family: "Sk-Modernist-Regular", sans-serif;
@@ -149,33 +146,31 @@
 
 //! 🖼️------RESPONSIVE-------- 🖼️
 
-
 @media screen and (max-width: 1300px) {
   #prices-container {
     background: $light-color-100;
+    #sub-card-container {
+      flex-direction: column;
+      align-items: center;
+    }
   }
-  #sub-card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
   #prices-container {
-    .title{
-      padding: 0rem 1rem 2rem 1rem !important;
-      h2{
-        font-size: 24px !important;
+    .title {
+      padding: 1rem;
+      h2 {
+        font-size: 24px;
       }
-      p{
-        font-size: 12px !important;
+      p {
+        font-size: 12px;
         text-align: center;
       }
     }
     background: $light-color-100;
+    .sub-card-best-value,
+    .sub-card {
+      width: 90% !important;
+    }
   }
- .sub-card-best-value, .sub-card{
-   width: 260px !important;
- }
-  
 }

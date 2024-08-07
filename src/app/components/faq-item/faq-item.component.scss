@@ -13,12 +13,12 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 60%;
+    width: 40%;
     padding: 1rem;
     h2 {
       color: $dark-color;
+      width: 90%;
       font-size: 48px;
-      font-weight: 700;
     }
     p {
       font-size: 24px;
@@ -68,45 +68,51 @@
 
 //! 🖼️------RESPONSIVE-------- 🖼️
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   #faq {
-    padding: 20rem 0 5rem 0 !important;
+    padding: 20rem 0 5rem 0;
+    .faq-header {
+      width: auto;
+    }
   }
   .faq-item {
-    width: 80% !important;
-    padding: 0.5rem !important;
-    p {
-      width: inherit;
-      font-size: 16px !important;
-    }
-    .plus-button {
-      width: 30px !important;
-      height: 30px !important;
+    width: 80%;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #faq {
+    .faq-header {
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 20px;
+      }
     }
   }
 }
-
 @media screen and (max-width: 430px) {
   #faq {
-    padding: 15rem 0 5rem 0 !important;
+    padding: 15rem 0 5rem 0;
     .faq-header {
       h2 {
-        font-size: 24px !important;
+        font-size: 24px;
       }
       p {
-        font-size: 16px !important;
+        font-size: 16px;
       }
     }
     .faq-item {
-      width: 80% !important;
-      padding: 0.5rem !important;
+      width: 80%;
+      padding: 0.5rem;
       p {
         width: inherit;
-        font-size: 12px !important;
+        font-size: 12px;
       }
       .plus-button {
-        width: 20px !important;
-        height: 20px !important;
+        width: 20px;
+        height: 20px;
       }
     }
   }

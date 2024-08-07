@@ -8,21 +8,26 @@ import { FaqItemComponent } from './components/faq-item/faq-item.component';
 import { GiftCardComponent } from './components/gift-card/gift-card.component';
 import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SubCardComponent, RatingImgComponent, FaqItemComponent, GiftCardComponent, WelcomePageComponent],
+  imports: [
+    SubCardComponent,
+    RatingImgComponent,
+    FaqItemComponent,
+    GiftCardComponent,
+    WelcomePageComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  constructor(private kinoApiService: KinoApiService, private scroller: ViewportScroller) {}
+  constructor(
+    private kinoApiService: KinoApiService,
+    private scroller: ViewportScroller
+  ) {}
 
   ngOnInit(): void {
-    this.kinoApiService.getSubDetails().then((data) => {
-    });
+    this.kinoApiService.getSubDetails().then((data) => {});
   }
-
- 
 }

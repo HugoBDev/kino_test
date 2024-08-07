@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./rond-icon.component.scss'],
 })
 export class RondIconComponent {
-@Input()half: boolean = false
-@Input()step: number = 1
-@Input()imgSrc: string = ""
+  @Input() half: boolean = false;
+  @Input() step: number = 1;
+  @Input() imgSrc: string = '';
 }
