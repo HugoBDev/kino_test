@@ -54,10 +54,18 @@
 //! 🖼️------RESPONSIVE-------- 🖼️
 
 @media screen and (max-width: 1000px) {
-  #gift-card {
-    .content {
-      padding: 2rem;
-      width: auto;
+  .gift-card-container{
+    #gift-card {
+      .content {
+        padding: 2rem;
+        width: auto;
+      }
+      h2{
+        font-size: 36px;
+      }
+      p{
+        font-size: 20px;
+      }
     }
   }
 }
@@ -65,15 +73,8 @@
 @media screen and (max-width: 600px) {
   #gift-card {
     .content {
-      h2 {
-        font-size: 36px;
-      }
-      p,
-      a {
-        font-size: 20px;
-      }
       button {
-        padding: 1rem 2rem;
+        padding: 0.5rem 2rem;
       }
     }
   }

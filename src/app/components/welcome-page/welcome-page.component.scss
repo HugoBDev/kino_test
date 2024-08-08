@@ -21,7 +21,7 @@
     .title {
       h1{
         font-size: 90px;
-        line-height: 150px;
+        line-height: 100px;
       }
     }
   }
@@ -30,6 +30,11 @@
     object-fit: cover;
     display: flex;
     align-items: center;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
   }
   .redirect{
     cursor: pointer;
@@ -131,8 +136,8 @@
 @media screen and (max-width: 500px) {
   #welcome-page {
     flex-direction: column;
-    padding: 2rem 0 0 0;
-    gap: 5rem;
+    padding: 2rem 0 2rem 0;
+    gap: 3rem;
     .text-side {
       width: 90%;
       gap: 1rem;

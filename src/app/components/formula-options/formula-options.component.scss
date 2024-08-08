@@ -59,6 +59,7 @@
  #formula-options-container {
    flex-direction: column;
    .formula-options{
+    gap: 0.5rem;
     align-items: baseline;
     padding: 0 0 0 10rem;
    
@@ -84,6 +85,7 @@
     flex-direction: column;
     .formula-options{
       padding: 0.5rem;
+      gap: 1rem;
     }
     .title {
       width: 100%;
