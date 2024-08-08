@@ -43,5 +43,8 @@ Un grand merci à l'équipe de Kinomap pour cette opportunité de démontrer mes
 Pour toute question ou commentaire concernant ce projet, n'hésitez pas à me contacter.
 
 
+permalink: /index.html
+
+
 
 
