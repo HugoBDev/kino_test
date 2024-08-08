@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
-  width: 90vw;
+  width: 60%;
   padding: 3rem 0 4rem 0;
 }
 .title {
@@ -58,11 +58,12 @@
 @media screen and (max-width: 1300px) {
  #formula-options-container {
    flex-direction: column;
+   width: auto;
+   padding: 2rem;
+   margin: 0;
    .formula-options{
     gap: 0.5rem;
     align-items: baseline;
-    padding: 0 0 0 10rem;
-   
     .option-row{
       flex-direction: column;
     }
@@ -71,11 +72,7 @@
 }
 @media screen and (max-width: 850px) {
   #formula-options-container {
-    .formula-options{
-      padding: 1rem;
-    }
     .title {
-      width: 100%;
       text-align: center;
     }
   }
@@ -83,10 +80,6 @@
 @media screen and (max-width: 430px) {
   #formula-options-container {
     flex-direction: column;
-    .formula-options{
-      padding: 0.5rem;
-      gap: 1rem;
-    }
     .title {
       width: 100%;
       font-size: 24px;
