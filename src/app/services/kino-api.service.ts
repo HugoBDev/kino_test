@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class KinoApiService {
-  constructor() {}
 
   BASE_URL: string = 'http://preprod.kinomap.com:3333';
 
@@ -19,6 +18,7 @@ export class KinoApiService {
         .catch((e) => reject(e));
     });
   }
+
   getSubDetails(): Promise<any> {
     const url = `${this.BASE_URL}/subscriptions`;
     return new Promise<any>((resolve, reject) => {

@@ -5,7 +5,7 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
 @Component({
   selector: 'app-welcome-page',
   standalone: true,
-  imports: [NavBarComponent],
+  imports: [],
   templateUrl: './welcome-page.component.html',
   styleUrl: './welcome-page.component.scss',
 })

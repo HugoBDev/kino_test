@@ -55,10 +55,24 @@
 }
 
 //! 🖼️------RESPONSIVE-------- 🖼️
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
+ #formula-options-container {
+   flex-direction: column;
+   .formula-options{
+    align-items: baseline;
+    padding: 0 0 0 10rem;
+   
+    .option-row{
+      flex-direction: column;
+    }
+   }
+ } 
+}
+@media screen and (max-width: 850px) {
   #formula-options-container {
-    flex-direction: column;
+    .formula-options{
+      padding: 1rem;
+    }
     .title {
       width: 100%;
       text-align: center;
@@ -68,6 +82,9 @@
 @media screen and (max-width: 430px) {
   #formula-options-container {
     flex-direction: column;
+    .formula-options{
+      padding: 0.5rem;
+    }
     .title {
       width: 100%;
       font-size: 24px;

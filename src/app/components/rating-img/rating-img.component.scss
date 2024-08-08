@@ -3,27 +3,21 @@
 #rating-img {
   position: relative;
   width: 100%;
+  height: 1000px;
   display: flex;
+  flex-direction: column;
+  align-items: end;
   justify-content: center;
-  // height: 100%;
-  .content{
-    width: 100%;
-  }
-  .img-container{
-    width: 100%;
-    .runner-img {
-      width: 100%;
-      object-fit: cover;
-    }
-  }
+  background-image: url("https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/image2.png?ref_type=heads");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .description {
-  position: absolute;
-  top: 15rem;
-  right: 7rem;
   display: flex;
   flex-direction: column;
+  padding-right: 10rem;
   gap: 2.5rem;
   width: 30%;
   z-index: 1000;
@@ -156,8 +150,6 @@
 
 @media screen and (max-width: 1900px) {
   .description {
-    padding: 2rem;
-    top: 5rem;
     .text-container {
       h2 {
         font-size: 60px;
@@ -172,9 +164,14 @@
   }
 }
 @media screen and (max-width: 1600px) {
+  #rating-img {
+    align-items: center;
+    height: 800px;
+  }
   .description {
     align-items: center;
     width: auto;
+    padding: 2rem;
     .text-container {
       h2 {
         font-size: 60px;
@@ -198,14 +195,11 @@
 }
 @media screen and (max-width: 1300px) {
   .description {
-    width: 90%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5rem;
     padding: 2rem;
-    top: 5rem;
-    left: 2rem;
     .text-container {
       h2 {
         font-size: 50px;
@@ -234,13 +228,12 @@
 @media screen and (max-width: 1100px) {
   .description {
     padding: 1rem;
+    text-align: center;
     .text-container {
       h2 {
         text-wrap: nowrap;
       }
     }
-    top: 2rem;
-    left: 1.25rem;
     gap: 2rem;
   }
   .banner {
@@ -258,6 +251,7 @@
       }
       .steps {
         flex-direction: column;
+        align-items: flex-start;
         gap: 2rem;
       }
     }
@@ -266,7 +260,7 @@
 
 @media screen and (max-width: 750px) {
   .description {
-    align-items: center;
+    gap: 5rem;
     .text-container {
       h2 {
         font-size: 30px;
@@ -276,7 +270,9 @@
         font-size: 16px;
       }
     }
+
     .rating {
+      justify-content: center;
       align-items: center;
       .prefered-app-img {
         width: 150px;
@@ -292,15 +288,8 @@
   }
 }
 @media screen and (max-width: 650px) {
-  .description {
-    top: 0;
-    align-items: baseline;
-    left: 0;
-    gap: 1rem;
-  }
   .rating {
-    flex-direction: row !important;
-    padding-left: 2rem;
+    // padding-left: 2rem;
     align-items: baseline;
   }
 
@@ -315,18 +304,21 @@
       font-size: 12px;
     }
   }
+  .banner-content {
+    .steps {
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 @media screen and (max-width: 470px) {
-  .description {
-    flex-direction: column;
+  #rating-img {
+    height: 600px;
     justify-content: center;
-    gap: 0.5rem;
+  }
+  .description {
     .text-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
       h2 {
         font-size: 26px;
       }
@@ -344,14 +336,19 @@
   .banner {
     left: 1rem;
     bottom: -230px;
+    padding-bottom: 1rem;
     .banner-content {
       padding: 0.5rem;
       .title {
         font-size: 20px;
       }
       .step-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
         p,
         span {
+          text-align: center;
           font-size: 14px;
         }
       }
@@ -361,6 +358,7 @@
 
 @media screen and (max-width: 410px) {
   .description {
+    gap: 2rem;
     .text-container {
       h2 {
         font-size: 18px;
@@ -371,6 +369,7 @@
     }
   }
   .rating {
+    gap: 1rem;
     .prefered-app-img {
       width: 80px !important;
     }

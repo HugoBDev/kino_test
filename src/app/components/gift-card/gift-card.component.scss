@@ -1,9 +1,12 @@
 @import "../../../styles.scss";
+
 .gift-card-container {
   display: flex;
   justify-content: center;
   width: 100%;
+  background: $light-color-100;
 }
+
 #gift-card {
   display: flex;
   flex-direction: column;
@@ -14,7 +17,6 @@
   color: $light-color;
   font-family: "SK-Modernist-Bold", sans-serif;
   width: 90%;
-
   .content {
     display: flex;
     flex-direction: column;
@@ -39,6 +41,12 @@
       font-size: 20px;
       font-weight: 500;
       cursor: pointer;
+      display: flex;
+      &::after {
+        content: url("../../assets/fleche.svg");
+        display: block;
+        padding: 3px 0 0 10px;
+      }
     }
   }
 }

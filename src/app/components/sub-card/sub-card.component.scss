@@ -144,6 +144,13 @@
   }
 }
 
+.sub-card, .sub-card-best-value{
+  &:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
 //! 🖼️------RESPONSIVE-------- 🖼️
 
 @media screen and (max-width: 1300px) {

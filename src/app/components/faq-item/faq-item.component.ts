@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { KinoApiService } from '../../services/kino-api.service';
 import { Faq } from '../../models/kino.model';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-faq-item',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './faq-item.component.html',
   styleUrl: './faq-item.component.scss',
 })

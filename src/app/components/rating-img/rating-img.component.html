@@ -1,14 +1,6 @@
 <div id="rating-img">
-  <div class="content">
-    <div class="img-container">
-      <img
-        class="runner-img"
-        src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/image2.png?ref_type=heads"
-        alt="Picture of a runner on a track close to mountains"
-      />
       <div class="bottom-blur"></div>
-      <div class="left-blur"></div>
-    </div>
+      <div class="left-blur"></div> 
     <div class="description">
       <div class="text-container">
         <h2>
@@ -28,31 +20,20 @@
         />
         <div class="star-rating">
           <p>{{ ratingScore }}</p>
+          @for(star of [].constructor(starFilled) ; track star){
           <img
             class="star"
             src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/star.svg?ref_type=heads"
             alt=""
           />
-          <img
-            class="star"
-            src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/star.svg?ref_type=heads"
-            alt=""
-          />
-          <img
-            class="star"
-            src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/star.svg?ref_type=heads"
-            alt=""
-          />
-          <img
-            class="star"
-            src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/star.svg?ref_type=heads"
-            alt=""
-          />
+          } @for(starEmpty of [].constructor(starEmpty) ; track starEmpty){
           <img
             class="star"
             src="https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/emptyStar.svg?ref_type=heads"
             alt=""
           />
+
+          }
         </div>
       </div>
     </div>
@@ -88,5 +69,5 @@
         </div>
       </div>
     </div>
-  </div>
+
 </div>

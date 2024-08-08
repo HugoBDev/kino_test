@@ -9,19 +9,20 @@
   <div id="faq-item-container">
     @for(faqItem of faqItems ; track faqItem){
     <div class="faq-item">
-      <p>{{ faqItem.title }}</p>
-      <div class="plus-button" (click)="faqItem.isOpen = !faqItem.isOpen">
-        <img
-          [src]="
-            'https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/plus.svg?ref_type=heads'
-          "
-        />
+      <div class="faq-question">
+        <p>{{ faqItem.title }}</p>
+        <div class="plus-button" (click)="faqItem.isOpen = !faqItem.isOpen">
+          <img
+            [src]="
+              'https://gitlab.com/kinomap-dev/frontproject/-/raw/master/images/plus.svg?ref_type=heads'
+            "
+          />
+        </div>
+      </div>
+      <div class="faq-details" [class.open]="faqItem.isOpen">
+        <p>{{ faqItem.details }}</p>
       </div>
     </div>
-    @if(faqItem.isOpen){
-    <div class="faq-details">
-      <p>{{ faqItem.details }}</p>
-    </div>
-    } }
+    }
   </div>
 </div>
